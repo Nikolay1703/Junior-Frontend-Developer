@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+.form {
+    font-family: cursive; 
+    padding: 5px; 
+    width: 570px;
+}
+
+.h1 {
+    font-size:180%;
+    border-radius: 15px;
+    background-image: linear-gradient(#e659d3, #ffffff00);
+}
+
+.span {
+    color:green;
+}
+
+.div1 {
+    display: inline-block;
+}
+
+.div1-2 {
+    display: inline-block; 
+    vertical-align: top;
+}
+
+.font  {
+    font-weight: bolder;
+}
+
+.font2 {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.button-default {
+    outline: none;
+    cursor: pointer;
+    border-radius: 9px;
+    background-color: #8fa8ca;
+    color: #3f1f00;
+    display: inline-block;
+    border: 1px solid #db87f0;
+    padding: 1px 1px;
+    margin-bottom: 3px;
+    text-decoration: unset;
+    position: static;
+}
+
+.uncommon-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.uncommon-list li:nth-child(2) {
+    color: rgb(5, 29, 252);
+}
+
+.uncommon-list li:nth-child(3) {
+    color: rgb(255, 0, 0);
+}
+
+.uncommon-list li:nth-child(4) {
+    color: rgb(248, 0, 248);
+}
+
+.uncommon-list li::after {
+        font-family: "Font Awesome 5 Free";
+}
+
+.uncommon-list .item1::after {
+    content: '\f1c9';
+}
+
+.uncommon-list .item2::after {
+    content: '\f2dc';
+}
+
+.uncommon-list .item3::after {
+    content: '\f3a5';
+}
+
+.uncommon-list .item4::after {
+    content: '\f044';
+}
+
+.modern {
+    outline: none;
+    display: inline-block;
+    margin: 3px;
+    padding: 3px 7px;
+    background: #a6ff00;
+    border: 2px solid rgba(0,0,0,0.15);
+    border-radius: 15px;
+    box-shadow: 
+    inset 2px 2px 2px rgba(255,255,255,0.5), 
+    5px 5px 5px rgba(0,0,0,0.3), 
+    5px 5px 4px 1px #1752f533; 
+    text-decoration: none;
+    text-shadow: 0 1px rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+
+
+input[type="number"][name="zp"] {
+    outline: none;
+    background-color: rgb(138, 204, 167);
+    border: 2px solid #db87f0;
+    border-radius: 9px;
+    text-align: right; 
+    width: 130px; 
+    color:#e05809;
+    cursor: pointer;
+}
+
+.checkbox,
+.radio  {
+    display:none;
+}
+
+.checkbox-custom,
+.radio-custom  {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(58, 4, 255);
+    border-radius: 3px;
+}
+
+.checkbox-custom,
+.radio-custom,
+.label  {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.checkbox:checked + .checkbox-custom::before, 
+.radio:checked + .radio-custom::before {
+    font-family: "Font Awesome 5 Free";
+    content: '\f164';
+    display: block;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+}
+.radio-custom, 
+.radio:checked + .radio-custom::before {
+    font-family: "Font Awesome 5 Free";
+    content: '\f118';
+    color: #ff0000;
+    border-radius: 50%;
+    }
+
+#tr {
+    background-color: #3700ff;
+}
+
+tr:hover {
+    background: rgb(220, 248, 64);
+    cursor: not-allowed;
+}
